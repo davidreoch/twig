@@ -12,10 +12,14 @@ const output = chunk(myArgs, divideAmount);
 // function which cretes array of elements split equally where possible
 function chunk(arr, divideAmount) {
     var ret = [];
-    // loop through array incrementing i by division amount
-    for (var i = 0; i < arraySize; i += divideAmount) {
-        // push each subarray to ret array
-        ret.push(arr.slice(i, i + divideAmount));
+    if (arr.length === 0) {
+        console.log('No elements in array!');
+    } else {
+        // loop through array incrementing i by division amount
+        for (var i = 0; i < arraySize; i += divideAmount) {
+            // push each subarray to ret array
+            ret.push(arr.slice(i, i + divideAmount));
+        }
     }
     return ret;
 }
