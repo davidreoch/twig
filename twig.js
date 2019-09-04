@@ -6,10 +6,6 @@ const chunkSize = parseInt(myArgs.pop());
 // the amount to divide by, round number up or down to nearest whole number
 const divideAmount = Math.round(arraySize / chunkSize);
 
-console.log(arraySize / chunkSize);
-
-console.log(divideAmount);
-
 // assign output to returned value
 const output = chunk(myArgs, divideAmount);
 
