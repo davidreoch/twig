@@ -1,4 +1,5 @@
 // Take in args from command line in the form node [filename] val1 val2 val3 val4 chunkSize
+// remove the first two default args
 var myArgs = process.argv.slice(2);
 const arraySize = parseInt(myArgs.length - 1);
 const chunkSize = parseInt(myArgs.pop());
